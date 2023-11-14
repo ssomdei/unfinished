@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSOMDEI Art Gallery</title>
+    <style>
+        
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        .hamburger {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            display: inline-block;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+
+        .hamburger-line {
+            display: block;
+            width: 30px;
+            height: 5px;
+            margin: 5px 0;
+            background-color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 350px;
+            margin: 50px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-container {
+            padding: 2px 16px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="hamburger" type="button">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+         </button>
+         
+         
+        <h1>SSOMDEI Art Gallery</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <img src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t1.15752-9/386805103_1057641658594223_1653043174511596955_n.png?_nc_cat=110&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGx4izk5NUkVagwEZTC31xheP2ntQR0DEp4_ae1BHQMSuyU3Z3cQBtdGHBCrmUz1QlGIM1Ms5kzif0LDYQqYkBX&_nc_ohc=31VzgUSXer8AX8mUdzS&_nc_ht=scontent.fcrk1-2.fna&oh=03_AdRSfcZ-JYn9ufOvQ8Kr8riMdrdWZxOHxNcxEOnezsTO9Q&oe=6579A82A" alt="Digital Art 1">
+                <div class="card-container">
+                    <h2 class="card-title">Digital Art 1</h2>
+                    <p class="card-text">My Birthday (11-09-21).</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t1.15752-9/398292770_269728232690939_8756206933492629804_n.png?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGDYoBZ9DKlLsvhr_Q-pCL77vjPiB15Vivu-M-IHXlWK5Ky_AMmL1Eb_VtroP_Pt0INle2YdQeSW6YnMwLlDbXJ&_nc_ohc=SAh32z6W6fAAX9EKPbh&_nc_ht=scontent.fcrk1-4.fna&oh=03_AdSTxHhQ9WE-uTzH3OjgSiAri5ltwQQFzpuz44WJ6Y0XYA&oe=6579B6CA" alt="Digital Art 2">
+                <div class="card-container">
+                    <h2 class="card-title">Digital Art 2</h2>
+                    <p class="card-text">Alone With Everyone (10-30-21).</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.15752-9/386869000_1702427306904219_8973154097914847378_n.png?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEfKEW0-iwVXC9K4MSgX_v69L13RTGovrT0vXdFMai-tHLwTCaoz4xEQ9c89B6Dry2C_myhgYeLT_9xh_ZQJFRG&_nc_ohc=9sNmwqXcuZ0AX8xjrdF&_nc_ht=scontent.fcrk1-1.fna&oh=03_AdR0ygoXbRBFQ7npi3lkstHCeKzp1IiUMYiKcIej0j4nAg&oe=65799F52" alt="Digital Art 3">
+                <div class="card-container">
+                    <h2 class="card-title">Digital Art 3</h2>
+                    <p class="card-text">Kara (11-07-21).</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t1.15752-9/386467992_998418561217149_4857527926987191364_n.png?_nc_cat=106&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEGphAk3DiETRDVmWMadv9mS_Wj-ytiEqFL9aP7K2ISobZE5RiewBDvDDHmiZuD8hvv1am5lKtIbbLElczguKCb&_nc_ohc=KxlsO2ULAhYAX90rFA_&_nc_ht=scontent.fcrk1-3.fna&oh=03_AdTAjjhm3h_4y1GxKH2SeuWraGvUsp5TjqRDgnqkQ2Xx1w&oe=6579C6FE" alt="Digital Art 4">
+                <div class="card-container">
+                    <h2 class="card-title">Digital Art 4</h2>
+                    <p class="card-text">Peace (10-30-21).</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t1.15752-9/398267979_7016212331788385_4612222521072787078_n.png?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHRVs2leRPGAUbtpQu_AImbZJJex6PgZV1kkl7Ho-BlXUsxM8uzj27PRYcDck6civgp3O6QD7k9zGPoa0bauGJK&_nc_ohc=vtcMnMdSq3MAX9V1Soc&_nc_ht=scontent.fcrk1-4.fna&oh=03_AdS8GbC3X39sV_A3h2cnwk9zKzEkEYVgSOBYKrQ9SjC8rg&oe=6579D35A" alt="Painting 1">
+                <div class="card-container">
+                    <h2 class="card-title">Painting 1</h2>
+                    <p class="card-text">Daisy (12-11-19).</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t1.15752-9/371074829_1285570625375023_8961733635145692699_n.png?_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHfWQ4nXjMvsT-T4V0huKkovLVUIqzDuDG8tVQirMO4Ma1LFg1Sh-uSoE5cPTvpCGzl9e4CCpH7WwlelPbrvDUo&_nc_ohc=KzoXM6blz6EAX8zw-2p&_nc_ht=scontent.fcrk1-3.fna&oh=03_AdTBCfvg6-DMDD0Dsbi2R8sjiUJ2K-poH85lLMDsY4AguA&oe=6579BA65" alt="Painting 2">
+                <div class="card-container">
+                    <h2 class="card-title">Painting 2</h2>
+                    <p class="card-text">Shin Myo Han (2-27-2020).</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t1.15752-9/386877290_650922510503507_2551743431953596099_n.png?_nc_cat=110&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeFmXbbRJT4t5wegDzE1Mv6Ysox_VElb2bWyjH9USVvZtTl9awR3keOZuL0Z3kgxqPXKjwhX8EHB1_qs-FTF9_Zh&_nc_ohc=h-Yde8vhUQMAX_yif-9&_nc_ht=scontent.fcrk1-2.fna&oh=03_AdS6Vtk0qXuj2oqggqnoYbPXAJnCPTUDv9SY_O_O4W9uvw&oe=6579C47D" alt="Painting 3">
+                <div class="card-container">
+                    <h2 class="card-title">Painting 3</h2>
+                    <p class="card-text">??? (3-06-20).</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.15752-9/377151541_312185375078136_8276005579628214666_n.png?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeFYt_O1pS6cHsNLVyXfvuBag-fO5bijDTmD587luKMNOdN9f6TIDrKc4RJ38xFik-Gu3nJozxVnsFf-E4_Lzr6f&_nc_ohc=jIhJEuSTbb8AX982wlt&_nc_oc=AQkSeaDLPLKb6JJeRNGYAx9aSXi9Z307zU7p5oY2_XDwVGWG8xd_iDTZFi2tG377tNM&_nc_ht=scontent.fcrk1-1.fna&oh=03_AdRbLsbF1HeBbtnEOHdLzc0ttSa9mIdi_DoAxR2wUp3kXQ&oe=6579ADBB" alt="Painting 4">
+                <div class="card-container">
+                    <h2 class="card-title">Painting 4</h2>
+                    <p class="card-text">Test (12-10-19).</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SSOMDEI Art Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
